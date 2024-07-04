@@ -14,13 +14,13 @@ async function main() {
             { nombre: 'Distrito Nacional' },
             { nombre: 'Santiago' },
             { nombre: 'La Vega' },
-            // Agrega más provincias aquí
+            { nombre: 'Barahona' }
         ];
 
         const result = await provincias.insertMany(provinciasArray);
         console.log(`${result.insertedCount} provincias fueron insertadas.`);
 
-        // Consulta y muestra todas las provincias
+      
         const allProvincias = await provincias.find({}).toArray();
         console.log('Provincias en la base de datos:');
         allProvincias.forEach(provincia => console.log(provincia.nombre));
