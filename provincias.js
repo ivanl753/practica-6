@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 
 async function main() {
-    const uri = 'your_mongodb_connection_uri';
+    const uri = 'mongodb+srv://ivanl753159:Tecnomaster2112@cluster0.xglmyxt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
     try {
